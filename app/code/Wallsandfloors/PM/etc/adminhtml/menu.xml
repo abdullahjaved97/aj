@@ -1,0 +1,9 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Wallsandfloors_PM::pm" title="Promotional Messages"
+        module="Wallsandfloors_PM" sortOrder="20" resource="Wallsandfloors_PM::pm" />
+        <add id="Wallsandfloors_PM::all_pm" title="All Promotional Messages" translate="title" 
+        module="Wallsandfloors_PM" sortOrder="10" resource="Wallsandfloors_PM::all_pm"
+        parent="Wallsandfloors_PM::pm" action="promotionalmessages/index/index" />
+    </menu>
+</config>

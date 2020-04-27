@@ -1,0 +1,23 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="promotionalmessages_index_listing_data_source" xsi:type="string">Wallsandfloors\PM\Model\ResourceModel\PM\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Wallsandfloors\PM\Model\ResourceModel\PM\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">promotional_messages</argument>
+            <argument name="eventPrefix" xsi:type="string">promotional_messages_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">pm_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Wallsandfloors\PM\Model\ResourceModel\PM</argument>
+        </arguments>
+    </type>
+    <!-- <virtualType name="Wallsandfloors\PM\Model\ResourceModel\PM\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">promotional_messages</argument>
+            <argument name="resourceModel" xsi:type="string">Wallsandfloors\PM\Model\ResourceModel\PM</argument>
+        </arguments>
+    </virtualType> -->
+</config>
